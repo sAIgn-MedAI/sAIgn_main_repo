@@ -1,0 +1,35 @@
+/* styles/globals.css */
+
+/* Tailwind CSS 설정 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face 설정 */
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 사용자 정의 색상 변수 */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* 폰트 및 색상 적용 */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "GangwonEdu_OTFBoldA", Arial, Helvetica, sans-serif;
+}
